@@ -33,9 +33,15 @@ class Ui_MainWindow(object):
         self.textBrowser = QtWidgets.QTextBrowser(self.centralwidget)
         self.textBrowser.setObjectName("textBrowser")
         self.verticalLayout.addWidget(self.textBrowser)
+
         self.pushButton = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton.setObjectName("pushButton")
         self.verticalLayout.addWidget(self.pushButton)
+
+        self.tasks_button = QtWidgets.QPushButton(self.centralwidget)
+        self.tasks_button.setObjectName("tasks_button")
+        self.verticalLayout.addWidget(self.tasks_button)
+
         self.gridLayout.addLayout(self.verticalLayout, 1, 1, 2, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -49,6 +55,7 @@ class Ui_MainWindow(object):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
         self.pushButton.setText(_translate("MainWindow", "PushButton"))
+        self.tasks_button.setText(_translate("MainWindow", "Задачи"))
 
 
 if __name__ == "__main__":
